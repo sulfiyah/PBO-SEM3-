@@ -1,0 +1,19 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.falikhaproject1;
+
+/**
+ *
+ * @author hp
+ */
+public class Falikhaproject1 {
+
+    public static void main(String[] args) {
+        System.out.println("Falikha Sulfiyah");
+        System.out.println("2420506042");
+        System.out.println("Cirebon");
+        System.out.println("080000000000");
+    }
+}
