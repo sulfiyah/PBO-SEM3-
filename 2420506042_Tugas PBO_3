@@ -1,0 +1,101 @@
+package tugaspraktikum3;
+
+/**
+ *
+ * @author supil
+ */
+public class mobil {
+// atribut
+    private String merk;
+    private String model;
+    private int tahun;
+    private String warna;
+    
+// constructor
+    public mobil(String merk, String model, int tahun, String warna) {
+        this.merk = merk;
+        this.model = model;
+        this.tahun = tahun;
+        this.warna = warna;
+}
+    
+// getter dan setter
+    public String getMerk() {
+        return merk;
+    }
+
+    public void setMerk(String merk) {
+        this.merk = merk;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getTahun() {
+        return tahun;
+    }
+
+    public void setTahun(int tahun) {
+        this.tahun = tahun;
+    }
+
+    public String getWarna() {
+        return warna;
+    }
+
+    public void setWarna(String warna) {
+        this.warna = warna;
+    }
+
+    // method tambahan
+    public void startEngine() {
+        System.out.println("Mesin mobil " + getMerk() + " menyala");
+    }
+
+    public void displayInfo() {
+        System.out.println("Merk  : " + getMerk());
+        System.out.println("Model : " + getModel());
+        System.out.println("Tahun : " + getTahun());
+        System.out.println("Warna : " + getWarna());
+        System.out.println("------------------------");
+    }
+}
+
+
+
+----------------------------MAIN------------------------------------
+
+
+
+package tugaspraktikum3;
+
+/**
+ *
+ * @author supil
+ */
+public class Main {
+      public static void main(String[] args) {
+        // membuat objek mobil
+        mobil mobil1 = new mobil("Mclaren", "MCL39", 2025, "Orange");
+        mobil mobil2 = new mobil("Audi", "R8", 2025, "Dayton Grey");
+
+        // menampilkan info mobil
+        mobil1.displayInfo();
+        mobil2.displayInfo();
+
+        // menyalakan mesin
+        mobil1.startEngine();
+        mobil2.startEngine();
+
+        // ubah warna mobil1
+        mobil1.setWarna("Hitam");
+        System.out.println("Setelah diubah warna:");
+        mobil1.displayInfo();
+      }
+}
+
